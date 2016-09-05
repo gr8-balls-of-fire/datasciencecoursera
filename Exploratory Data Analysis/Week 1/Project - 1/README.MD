@@ -15,6 +15,6 @@ the DataDictionary for Plot1 through 5 is in Codebook.MD
 ## plot(x).png
 These are the plots as required.
 Note the following:
-1. The png files are 480px x 480px
-2. All labels for plots are at 0.75x thenormal label soze to match the label sizws in the exercise web page.
-3. The last graph in plot 4 (bottom right) - the x & y axis labels are reproduced exactly including underscores in y axis and lack of space between date time in x axis
+* The png files are 480px x 480px
+* All labels for plots are at 0.75x thenormal label soze to match the label sizws in the exercise web page.
+* The last graph in plot 4 (bottom right) - the x & y axis labels are reproduced exactly including underscores in y axis and lack of space between date time in x axis
