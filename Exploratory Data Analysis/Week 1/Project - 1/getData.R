@@ -1,5 +1,6 @@
 ## load data.table package
 library(data.table)
+library(dplyr)
 ## Set Working directory
 setwd("/home/gr8-balls-of-fire/datasciencecoursera/Exploratory Data Analysis/Week 1/Project - 1")
 ## set the URL string
