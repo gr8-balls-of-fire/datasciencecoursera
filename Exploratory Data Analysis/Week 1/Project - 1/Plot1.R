@@ -3,6 +3,10 @@
 hpc <- data.table(read.csv("household_power_consumption.txt",sep = ";", na.strings = c("?","","NA"), header = TRUE))
 ## reduce the data set to 1st & 2nd Feb 2007
 hpc <- hpc[hpc$Date=="1/2/2007"|hpc$Date=="2/2/2007",]
+## mutate hpc to get a POSIXct dateTime column added
+hpc <- mutate(hpc,dateTime = as.POSIXct(paste(as.Date(hpc$Date,format = "%d/%m/%Y"), hpc$Time)))
+## remove the Date and the Time column and get the dateTime column as the irst column of the table
+hpc <- select(hpc, dateTime,c(3:9))
 ## plot the histogram with required specifications to the screen
 with(hpc, hist(Global_active_power, xlab = "Global Active Power (kilowatts)", ylab = "Frequency", col = "red", main = "Global Active Power"))
 ## copy to png device
